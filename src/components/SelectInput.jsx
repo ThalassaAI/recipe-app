@@ -1,7 +1,12 @@
 import React from "react";
 import { useTheme } from "../hooks";
 
-function SelectInput({ onChange, value, options = [] }) {
+function SelectInput({
+  onChange,
+  value,
+  options = [],
+  defaultOptionText = "Select",
+}) {
   const { isLightTheme } = useTheme();
 
   const selectClass = isLightTheme
@@ -15,7 +20,7 @@ function SelectInput({ onChange, value, options = [] }) {
       className={`form-select text-capitalize ${selectClass}`}
     >
       <option value="" disabled>
-        Sort by difficulty
+        {defaultOptionText}
       </option>
       {options.map((opt, index) => {
         return (

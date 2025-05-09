@@ -14,6 +14,7 @@ function FilterByDifficulty() {
 
   return (
     <SelectInput
+      defaultOptionText="Sort by difficulty"
       onChange={handleSelectDifficulty}
       value={difficulty}
       options={difficulties}

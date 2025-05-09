@@ -14,6 +14,7 @@ function FilterByMealType() {
 
   return (
     <SelectInput
+      defaultOptionText="Sort by meal type"
       onChange={handleSelectDifficulty}
       value={mealType}
       options={mealTypes}
