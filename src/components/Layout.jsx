@@ -9,14 +9,19 @@ function Layout() {
   const classContainer = isLightTheme
     ? "bg-light text-dark"
     : "bg-dark text-light";
+
   return (
     <>
-      <div className={classContainer} style={{ minHeight: "100vh" }}>
+      <div
+        className={classContainer}
+        style={{ minHeight: "100vh", backgroundColor: "lightcoral" }}
+      >
         <Navigationbar />
         <ScrollRestoration />
-        <div className="pb-5 pt-5">
+
+        <main className="container py-5">
           <Outlet />
-        </div>
+        </main>
       </div>
     </>
   );

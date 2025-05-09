@@ -30,26 +30,19 @@ function RecipesPage() {
   }
 
   return (
-    // <div>
-    //   <FilterByDifficulty />
-    //   <FilterByMealType />
-    //   <RecipesList />
-    // </div>
-    <div className="container">
-      <div className="row mb-3 mt-3">
-        <div className="offset-md-6 col-md-3">
+    <>
+      <div className="row justify-content-end mb-3">
+        <div className="col-auto">
           <FilterByDifficulty />
         </div>
-        <div className="col-md-3">
+        <div className="col-auto">
           <FilterByMealType />
         </div>
       </div>
-      <div className="row">
-        <div className="col-md-12  g-0">
-          <RecipesList recipes={recipes} />
-        </div>
+      <div className="row g-4">
+        <RecipesList recipes={recipes} />
       </div>
-    </div>
+    </>
   );
 }
 

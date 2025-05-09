@@ -23,11 +23,7 @@ function RecipeCard({
       to={`/recipe/${id}`}
     >
       <LazyImage src={image} alt={name} className="card-img-top" />
-      {/* <img
-    src={image}
-    alt={name}
-    className="card-img-top"
-  /> */}
+
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <Rating rating={rating} className="mb-2" showRating />
@@ -42,8 +38,10 @@ function RecipeCard({
           className={`card-text ${isLightTheme ? "text-body-secondary" : ""}`}
         >
           Cuisine: {cuisine}
+        </h6>
+        <h6 className="card-text">
           {mealType.map((meal) => (
-            <span key={meal} className="badge bg-primary ms-2 text-uppercase">
+            <span key={meal} className="badge bg-primary me-2 text-uppercase">
               {meal}
             </span>
           ))}

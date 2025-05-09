@@ -9,3 +9,4 @@ export { default as Navigationbar } from "./Navigationbar";
 export { default as RecipeCard } from "./RecipeCard";
 export { default as SelectInput } from "./SelectInput";
 export { default as ToggleButton } from "./ToggleButton";
+export { default as InfoWrapper } from "./InfoWrapper";

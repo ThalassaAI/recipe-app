@@ -9,7 +9,7 @@ function Navigationbar() {
   const { isLightTheme } = useTheme();
 
   const classContainer = isLightTheme
-    ? "navbar border-bottom border-light"
+    ? "navbar border-bottom border-danger"
     : "navbar bg-dark border-bottom border-body";
 
   const dataBsTheme = isLightTheme ? "light" : "dark";

@@ -3,13 +3,13 @@ import RecipeCard from "./RecipeCard";
 
 function RecipesList({ recipes = [] }) {
   return (
-    <div className="row g-3">
+    <>
       {recipes.map((recipe) => (
-        <div className="col-md-4" key={recipe.id}>
+        <div className="col-sm-6 col-md-4 col-lg-3" key={recipe.id}>
           <RecipeCard {...recipe} />
         </div>
       ))}
-    </div>
+    </>
   );
 }
 
