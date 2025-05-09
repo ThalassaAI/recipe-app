@@ -4,12 +4,12 @@ import { useTheme } from "../hooks";
 function ToggleButton() {
   const { isLightTheme, toggleTheme } = useTheme();
 
+  const classContainer = isLightTheme
+    ? "btn btn-light rounded-circle"
+    : "btn btn-light rounded-circle";
+
   return (
-    <button
-      className="btn btn-outline-primary rounded-circle"
-      type="button"
-      onClick={toggleTheme}
-    >
+    <button className={classContainer} type="button" onClick={toggleTheme}>
       {isLightTheme ? (
         <i class="bi bi-brightness-high-fill"></i>
       ) : (

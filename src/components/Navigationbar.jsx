@@ -6,7 +6,7 @@ import { useTheme } from "../hooks";
 import ToggleButton from "./ToggleButton";
 
 function Navigationbar() {
-  const { isLightTheme, toggleTheme } = useTheme();
+  const { isLightTheme } = useTheme();
 
   const classContainer = isLightTheme
     ? "navbar border-bottom border-light"
@@ -14,22 +14,34 @@ function Navigationbar() {
 
   const dataBsTheme = isLightTheme ? "light" : "dark";
 
+  // const style = undefined;
   const style = isLightTheme
     ? {
-        backgroundColor: "lightgrey",
+        backgroundColor: "#E1306C",
       }
     : undefined;
 
-  const imageStyle = !isLightTheme
-    ? {
-        filter: "invert(1)",
-      }
-    : undefined;
+  const imageStyle = {
+    filter: "invert(1)",
+  };
+  // const imageStyle = !isLightTheme
+  //   ? {
+  //       filter: "invert(1)",
+  //     }
+  //   : undefined;
+
+  const linkStyle = {
+    color: "white",
+  };
 
   return (
     <nav className={classContainer} data-bs-theme={dataBsTheme} style={style}>
       <div className="container-fluid">
-        <a className="navbar-brand d-flex align-items-center gap-2" href="/">
+        <a
+          className="navbar-brand d-flex align-items-center gap-2"
+          href="/"
+          style={linkStyle}
+        >
           <img
             src={recipe100}
             alt="Logo"
