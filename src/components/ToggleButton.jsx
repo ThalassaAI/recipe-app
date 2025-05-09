@@ -11,9 +11,9 @@ function ToggleButton() {
   return (
     <button className={classContainer} type="button" onClick={toggleTheme}>
       {isLightTheme ? (
-        <i class="bi bi-brightness-high-fill"></i>
+        <i className="bi bi-brightness-high-fill"></i>
       ) : (
-        <i class="bi bi-moon-stars-fill"></i>
+        <i className="bi bi-moon-stars-fill"></i>
       )}
     </button>
   );

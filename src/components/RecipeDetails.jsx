@@ -19,7 +19,7 @@ function RecipeDetails({
 }) {
   return (
     <div className="row">
-      <div className="col-md-6">
+      <div className="col-md-6 mb-2 mb-sm-0">
         <img src={image} alt={name} className="img-fluid" />
       </div>
       <div className="col-md-6">

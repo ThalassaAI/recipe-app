@@ -31,11 +31,11 @@ function RecipesPage() {
 
   return (
     <>
-      <div className="row justify-content-end mb-3">
-        <div className="col-auto">
+      <div className="row justify-content-end mb-3 g-0 g-sm-2">
+        <div className="col col-sm-auto">
           <FilterByDifficulty />
         </div>
-        <div className="col-auto">
+        <div className="col col-sm-auto">
           <FilterByMealType />
         </div>
       </div>
